@@ -2,6 +2,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User\AuthController;
+
+// Base route: localhost:8000/auth-api/
 Route::get('/', function () {
     return response()->json(['message' => 'Auth Api Test: localhost:8000/auth-api']);
 });
