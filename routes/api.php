@@ -9,6 +9,12 @@ use App\Http\Controllers\Public\{
     SeriesController
 };
 
+Route::get('/', function () {
+    return response()->json([
+        'message' => 'Welcome to the API',
+        'version' => '1.0.0'
+    ]);
+});
 // Default resource routes
 Route::apiResource('products', ProductController::class);
 Route::apiResource('categories', CategoryController::class);
