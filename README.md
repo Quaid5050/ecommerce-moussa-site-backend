@@ -60,4 +60,4 @@ These extensions are necessary for handling image and ZIP file manipulations, wh
 2. **Step 3** explains how to store the generated Client IDs in the `.env` file and how to use them in API requests.
 3. Added clarity to each step for better understanding.
 
-Feel free to adjust any parts further or let me know if you need additional changes!
+Feel free to adjust any parts further or let me know if you need additional changes
