@@ -47,6 +47,9 @@ class DeployApplication extends Command
             Artisan::call('storage:link');
             $this->info('Storage symlink created.');
 
+             //generate passport keys
+            Artisan::call('passport:keys');
+
             //Run the custom passport access-clients passport keys
             $this->call('passport:create-personal-access-clients');
 
