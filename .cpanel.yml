@@ -1,0 +1,9 @@
+deployment:
+    tasks:
+        - composer install --no-dev --optimize-autoloader
+        - php artisan migrate --force
+        - php artisan optimize:clear
+        - php artisan storage:link
+        - php artisan passport:create-personal-access-clients
+        - chown -R gamekrlp:gamekrlp .
+        - chmod -R 775 storage bootstrap/cache
